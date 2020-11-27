@@ -365,7 +365,7 @@ h2 {
   border: 1px solid #2E2E2E;
   height: 212px;
   width: 100%;
-  max-width: 433px;
+  max-width: 96%;
   background: #FFFFFF;
   margin: 0 auto; }
 
@@ -374,9 +374,6 @@ h2 {
 
 .tenants-slider {
   margin: 55px 0 0; }
-
-.slick-slider {
-  padding: 0 43px; }
 
 .slick-slide {
   outline: none; }
@@ -1037,7 +1034,7 @@ footer {
     font-size: 14px; }
   .header-box__icon {
     margin: 0 10px 0 0; }
-  .shops-slider {
+  .slick-slider {
     padding: 0 20px; }
   .slick-arrow {
     width: 20px;
@@ -1046,7 +1043,13 @@ footer {
     height: 200px; }
   .shops-box {
     padding: 0;
-    max-width: none; } }
+    max-width: none; }
+  .tenants-box {
+    max-width: none;
+    height: 180px; }
+  .tenants .container:before {
+    width: 117px;
+    height: 117px; } }
 
 @media only screen and (max-width: 480px) {
   header .schedule {
