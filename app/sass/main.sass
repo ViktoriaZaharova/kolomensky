@@ -647,12 +647,20 @@ button
 
 //footer
 footer
-  background: url("../img/footer-bg.svg") no-repeat center bottom, linear-gradient(265.99deg, #E0E0E0 6.84%, #B2B2B2 86.7%), #C4C4C4
-    size: cover, cover
+  background: linear-gradient(265.99deg, #E0E0E0 6.84%, #B2B2B2 86.7%), #C4C4C4
   margin: -130px 0 0
   z-index: 1
   position: relative
   padding: 145px 0 25px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    background: url("../img/footer-bg.svg") no-repeat center bottom
+      size: cover
+    width: 100%
+    height: 500px
 
   .container
     align-items: flex-end
