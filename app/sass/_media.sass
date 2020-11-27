@@ -3,26 +3,272 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1700px)
+  .menu li
+    margin: 0 30px 0 0
+
+  .shops-box
+    padding: 0 10px
+
+@media only screen and (max-width : 1550px)
+  .menu li
+    margin: 0 20px 0 0
+    a
+      font-size: 16px
+
+  header
+    .logo
+      margin: 0 30px 0 0
+
+  .schedule
+    margin: 0 30px 0 220px
+
+  .logo
+    max-width: 190px
+
+  .shops-box__img
+    height: 250px
+
+  .shops-slider .slick-arrow
+    height: 250px
+
+  footer
+    margin: -160px 0 0
+
+  .footer-box a, .footer-box .address-footer
+    font-size: 16px
+
+
+  footer .list-social
+    li
+      margin: 0 14px 0 0
+
+  .menu-footer li a
+    font-size: 16px
+
+@media only screen and (max-width : 1300px)
+  .callback-section__content
+    margin: 0 auto 0 0
+    max-width: 510px
+
+  footer .logo
+    margin: 0 30px 0 0
+
 @media only screen and (max-width : 1200px)
-	/**/
+  .logo
+    max-width: 110px
+
+  .list-social li a
+    width: 26px
+    height: 26px
+
+  .schedule
+    margin: 0 30px 0 140px
+
+  .menu
+    li
+      margin: 0 10px 0 0
+      a
+        font-size: 14px
+
+  .tabs__caption li
+    font-size: 16px
+
+  .shops .container:after
+    width: 117px
+    height: 117px
+
+  .tabs__caption li
+    margin: 0 20px 0 0
+
+  .shops-slider:before
+    width: 117px
+    height: 117px
+    bottom: -25px
+
+  .btn-scroll-top
+    bottom: 20px
+
+  footer
+    padding: 70px 0 25px
+
+  .menu-footer
+    li
+      a
+        font-size: 14px
+
+  .footer-box a, .footer-box .address-footer
+    letter-spacing: 0
+    font-size: 14px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  header
+    .menu
+      display: none
+    .list-social
+      margin: 0 auto
+    .logo
+      margin: 0
+
+  .btn-burger
+    display: flex
+
+  .header-center
+    .container
+      align-items: center
+
+  .header-box
+    font-size: 16px
+
+  .schedule
+    margin: 0 auto 0 0
+
+  .tabs__content
+    margin: 30px 0 0
+
+  .links-red
+    font-size: 16px
+
+  .shops
+    margin: 0 0 50px
+
+  .col-4
+    width: 50%
+
+  .form
+    max-width: 300px
+
+  .checkbox
+    letter-spacing: 0
+
+  .btn-scroll-top
+    width: 50px
+    height: 50px
+    right: 20px
+    padding: 10px
+
+  .menu-footer
+    display: none
+
+  footer
+    padding: 50px 0 20px
+    margin: 0
+
+  .callback-section
+    padding: 40px 0
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width : 860px)
+  .header-box
+    letter-spacing: 0
 
+  .tabs .links-all
+    margin: 20px auto 0
+
+  .tabs__caption
+    width: 100%
+
+  .callback-section__content
+    max-width: none
+    margin: 0 auto 30px
+    font-size: 18px
+    text-align: center
+    h3
+      font-size: 24px
+
+@media only screen and (max-width : 768px)
+  .shops .container:before
+    width: 117px
+    height: 117px
+
+  .tabs__caption
+    justify-content: space-around
+    li
+      margin: 0 0 5px
+      &:last-child
+        margin: 0 0 5px
+
+  footer
+    background: linear-gradient(265.99deg, #E0E0E0 6.84%, #B2B2B2 86.7%), #C4C4C4
+      size: cover
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      background: url("../img/footer-bg.svg") no-repeat center bottom
+        size: cover
+      width: 1050px
+      height: 300px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width : 575px)
+  .header-box
+    font-size: 14px
 
+  .header-box__icon
+    margin: 0 10px 0 0
+
+  .shops-slider
+    padding: 0 20px
+
+  .slick-arrow
+    width: 20px
+    padding: 0 2px
+
+  .shops-box__img, .shops-slider .slick-arrow
+    height: 200px
+
+  .shops-box
+    padding: 0
+    max-width: none
+
+@media only screen and (max-width : 480px)
+  header
+    .schedule
+      display: none
+
+  .col-4
+    width: 100%
+
+  .footer-box a, .footer-box .address-footer
+    font-size: 12px
+    letter-spacing: 0
+
+  footer
+    padding: 70px 0 10px
+    &:before
+      height: 350px
+      width: 1100px
+    .list-social
+      margin: 10px auto 0
+      width: 100%
+      order: 1
+      justify-content: center
+    .container
+      justify-content: space-between
+    .logo
+      margin: 0
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width : 420px)
+  .header-box
+    font-size: 12px
+
+  .links-call .header-box__icon
+    margin: 0 10px 0 0
+
+  .header-top
+    padding: 10px 0
+
+  .btn-scroll-top
+    width: 40px
+    height: 40px
+
 @media only screen and (max-width : 320px)
 	/**/
 
