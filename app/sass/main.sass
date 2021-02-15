@@ -147,6 +147,7 @@ a
 
 .dropdown-wrapper-schedule
   margin: 0 auto 0 180px
+
   .dropdown-box
     min-width: 315px
 
@@ -154,6 +155,7 @@ a
   .header-box__icon
     width: 18px
     height: 18px
+
   .svg-icon
     fill: none
     stroke: #fff
@@ -163,6 +165,7 @@ a
 
 .address
   margin: 0 0 0 462px
+
   .header-box__icon
     width: 18px
     height: 21px
@@ -179,6 +182,7 @@ a
   box-shadow: 0 4px 10px rgba(212, 0, 12, 0.1)
   background: #fff
   display: none
+
   &:before
     content: ''
     width: 0
@@ -188,12 +192,13 @@ a
     border-bottom: 16px solid #fff
     position: absolute
     left: 50%
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
     top: -16px
 
 .list-schedule
   color: #231F20
   font-size: 18px
+
   li
     border-bottom: 0.5px solid #E0E0E0
     display: flex
@@ -203,6 +208,7 @@ a
 
     &:last-child
       border: none
+
     p
       font-weight: bold
 
@@ -211,6 +217,7 @@ a
   align-items: center
   flex-wrap: wrap
   position: relative
+
   li
     margin: 0 60px 0 0
 
@@ -223,9 +230,11 @@ a
 
       &:hover
         color: #000
+
   .dropdown-box
     left: 50%
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
+
     &:before
       border-bottom-color: #E30613
 
@@ -233,14 +242,17 @@ a
   text-align: center
   width: 100%
   white-space: nowrap
+
   li
     width: 100%
+
     a
       font-size: 18px
       font-weight: bold
       color: #E30613
       width: 100%
       padding: 10px 15px
+
       &:hover
         background: #E30613
         color: #fff
@@ -276,6 +288,7 @@ a
   margin: 0 0 73px
   position: relative
   z-index: 1
+
   img
     width: 100%
 
@@ -284,6 +297,7 @@ a
   color: #E30613
   font-size: 18px
   font-weight: bold
+
   &:hover
     color: #2E2E2E
 
@@ -344,9 +358,61 @@ a
   align-items: center
   justify-content: center
   margin: 0 0 30px
-
+  position: relative
+  cursor: pointer
+  overflow: hidden
+  &:hover
+    .news-box__hidden
+      bottom: 0
   img
     width: 100%
+
+  &__hidden
+    position: absolute
+    left: 0
+    bottom: -100%
+    background: linear-gradient(255.63deg, #FF9280 -43.07%, #E30613 128.95%), #C4C4C4
+    color: #fff
+    padding: 14px 25px 24px
+    font-size: 20px
+    transition: .3s ease
+    h3
+      font-size: 28px
+      font-weight: bold
+      margin: 0 0 4px
+    .line
+      margin: 25px 0 0
+
+.line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+
+.links-icon
+  fill: none
+  stroke: #fff
+  width: 20px
+  height: 12px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 6px
+
+.links
+  display: flex
+  align-items: center
+  color: #fff
+  font-size: 14px
+  transform: rotate(0.03deg)
+  &:hover
+    color: #2E2E2E
+    .svg-icon
+      stroke: #2E2E2E
+
+.date
+  font-size: 14px
 
 .news
   .container
@@ -436,6 +502,7 @@ h2
 //.shops
 .shops
   margin: 0 0 68px
+
   .container
     &:before
       content: ''
@@ -516,6 +583,7 @@ h2
 .shops-slider
   position: relative
   padding: 0
+
   .slick-arrow
     top: 0
     transform: none
@@ -549,8 +617,10 @@ h2
 .consent
   max-width: 225px
   width: 100%
+
   .checkbox
     align-items: flex-start
+
   .checkbox-custom
     margin: 5px 13px 0 0
 
@@ -648,11 +718,14 @@ button
   display: flex
   align-items: flex-start
   flex-wrap: wrap
+
   button
     margin: 0 0 19px
     width: 225px
+
   label
     width: 385px
+
   .checkbox
     width: auto
 
@@ -661,9 +734,9 @@ button
   flex-direction: column
   align-items: flex-start
   margin: 0 15px 0 0
+
   &:last-child
     margin: 0
-
 
 
 .callback-section__content
@@ -711,14 +784,17 @@ footer
   .container
     align-items: flex-end
     justify-content: space-between
+
   .logo
     margin: 0
     max-width: 220px
 
   .list-social
     margin: 0
+
     li
       margin: 0 42px 0 0
+
       &:last-child
         margin: 0
 
@@ -737,6 +813,7 @@ footer
       font-size: 24px
       font-weight: bold
       transform: matrix(1, 0, 0, 1, 0, 0)
+
       &:hover
         color: $accent
 
@@ -817,25 +894,29 @@ footer
   padding: 30px 20px
   background: #fff
   display: none
+
   .logo
     max-width: 200px
+
   .dropdown-box
     position: relative
     left: 0
     transform: none
     top: 0
     margin: 10px 0 0
+
     &:before
       display: none
+
   .menu
     flex-direction: column
     align-items: center
     justify-content: center
     text-align: center
     margin: 30px auto
+
     li
       margin: 0 0 12px
-
 
 
   .list-social
