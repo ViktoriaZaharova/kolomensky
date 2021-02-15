@@ -118,7 +118,24 @@ $('.btn-close').click(function () {
     $('.mobile-menu').fadeOut();
 });
 
+// выпадающее меню
 $('.dropdown-item').on('click', function (e) {
     e.preventDefault();
    $(this).siblings('.dropdown-box').fadeToggle();
+});
+
+// main function
+$(function () {
+    // show list all
+    $('.load-more').on('click', function (e) {
+        e.preventDefault();
+        $('.news-box-col:hidden').slice(0, 3).slideDown();
+
+        let onBlock = $('.news-box-col:hidden').length;
+        if(onBlock <= 0) {
+            $('.load-more').hide();
+        }
+    });
+
+    // show list all
 });

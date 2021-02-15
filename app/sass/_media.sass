@@ -70,6 +70,16 @@
     min-height: 800px
     max-height: 800px
 
+@media only screen and (max-width : 1350px)
+  .news-box-col .news-box__hidden
+    font-size: 16px
+    padding: 20px
+    h3
+      font-size: 24px
+      margin: 0 0 20px
+    .date, .links
+      font-size: 14px
+
 @media only screen and (max-width : 1300px)
   .callback-section__content
     margin: 0 auto 0 0
@@ -158,6 +168,9 @@
     p
       margin: 0 0 30px
 
+  .news-box-value
+    font-size: 16px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   header
@@ -218,6 +231,9 @@
 
   .breadcrumbs
     margin: 20px 0
+
+  .col-3
+    width: 50%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 860px)
@@ -335,6 +351,30 @@
   .about-slider-preview__box
     width: 90px
     height: 90px
+
+  .col-3
+    width: 100%
+
+  .news-box-value
+    width: 100%
+    position: relative
+    right: 0
+    top: 0
+    text-align: center
+    transform: none
+    order: -1
+    margin: 0 auto 10px
+
+  .load-more
+    font-size: 18px
+
+  .news-box-col
+    margin: 0 0 20px
+    .news-box
+      max-height: 300px
+
+  .news-section
+    margin: 0 0 40px
 
 @media only screen and (max-width : 480px)
   header
