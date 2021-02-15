@@ -69,6 +69,7 @@ body
   position: relative
   line-height: normal
   font-family: $default-font
+  color: #231F20
 
 html, body
   overflow-x: hidden
@@ -109,19 +110,18 @@ a
 
 //header
 .header-center
-  padding: 10px 0 12px
+  padding: 10px 0 17px
 
 .logo
-  max-width: 205px
+  max-width: 200px
   width: 100%
   display: flex
   align-items: center
   justify-content: center
-  margin: 0 167px 0 35px
+  margin: 0 262px 0 0
 
 .links-call
   margin: 0 0 0 auto
-  letter-spacing: 0.18em
   font-size: 18px
   font-weight: bold
   color: #fff
@@ -132,7 +132,7 @@ a
     margin: 0 12px 0 0
 
 .header-top
-  padding: 12px 0 10px
+  padding: 9px 0
   background: #E30613
   color: #fff
 
@@ -140,29 +140,77 @@ a
   display: flex
   align-items: center
   font-size: 18px
-  letter-spacing: 0.18em
   font-weight: bold
 
 .header-box__icon
-  margin: 0 16px 0 0
+  margin: 0 15px 0 0
+
+.dropdown-wrapper-schedule
+  margin: 0 auto 0 180px
+  .dropdown-box
+    min-width: 315px
 
 .schedule
-  margin: 0 72px 0 408px
-
   .header-box__icon
     width: 18px
     height: 18px
+  .svg-icon
+    fill: none
+    stroke: #fff
+    width: 10px
+    height: 5px
+    margin: 0 0 0 6px
 
 .address
+  margin: 0 0 0 462px
   .header-box__icon
     width: 18px
     height: 21px
+
+.dropdown-wrapper
+  position: relative
+  cursor: pointer
+
+.dropdown-box
+  position: absolute
+  z-index: 2
+  top: calc(100% + 16px)
+  left: 0
+  box-shadow: 0 4px 10px rgba(212, 0, 12, 0.1)
+  background: #fff
+  display: none
+  &:before
+    content: ''
+    width: 0
+    height: 0
+    border-left: 24px solid transparent
+    border-right: 24px solid transparent
+    border-bottom: 16px solid #fff
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    top: -16px
+
+.list-schedule
+  color: #231F20
+  font-size: 18px
+  li
+    border-bottom: 0.5px solid #E0E0E0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px 16px
+
+    &:last-child
+      border: none
+    p
+      font-weight: bold
 
 .menu
   display: flex
   align-items: center
   flex-wrap: wrap
-
+  position: relative
   li
     margin: 0 60px 0 0
 
@@ -170,13 +218,32 @@ a
       margin: 0
 
     a
-      letter-spacing: 0.18em
-      font-size: 18px
-      font-weight: bold
-      color: #E30613
+      font-size: 24px
+      color: #2E2E2E
 
       &:hover
         color: #000
+  .dropdown-box
+    left: 50%
+    transform: translate(-50%,0)
+    &:before
+      border-bottom-color: #E30613
+
+.submenu
+  text-align: center
+  width: 100%
+  white-space: nowrap
+  li
+    width: 100%
+    a
+      font-size: 18px
+      font-weight: bold
+      color: #E30613
+      width: 100%
+      padding: 10px 15px
+      &:hover
+        background: #E30613
+        color: #fff
 
 .list-social
   display: flex
@@ -206,8 +273,9 @@ a
 //main
 .home
   width: 100%
-  margin: 0 0 54px
-
+  margin: 0 0 73px
+  position: relative
+  z-index: 1
   img
     width: 100%
 
@@ -216,7 +284,8 @@ a
   color: #E30613
   font-size: 18px
   font-weight: bold
-  letter-spacing: 0.18em
+  &:hover
+    color: #2E2E2E
 
 //news
 .tabs__content
@@ -259,7 +328,6 @@ a
     color: #2E2E2E
     font-size: 18px
     text-transform: uppercase
-    letter-spacing: 0.18em
     font-weight: bold
     cursor: pointer
 
@@ -309,30 +377,14 @@ a
       z-index: 1
 
 .tenants
-  margin: 84px 0 70px
+  margin: 40px 0 99px
 
-  .container
-    &:before
-      content: ''
-      position: absolute
-      width: 313px
-      height: 205px
-      left: 50%
-      transform: translate(-50%, 0) rotate(29.09deg)
-      top: -100px
-      background: url("../img/decor.svg") no-repeat center
-        size: 100%
-
-    > *
-      position: relative
-      z-index: 1
 
 h2
   transform: rotate(0.03deg)
   text-transform: uppercase
   font-weight: bold
   font-size: 18px
-  letter-spacing: 0.18em
   color: #2E2E2E
   border-top: 2px solid #E30613
   padding: 5px 0 0
@@ -352,7 +404,7 @@ h2
   width: 100%
 
 .tenants-slider
-  margin: 55px 0 0
+  margin: 53px 0 0
 
 
 .slick-slide
@@ -383,34 +435,18 @@ h2
 
 //.shops
 .shops
-  margin: 0 0 100px
-
+  margin: 0 0 68px
   .container
     &:before
       content: ''
-      transform: rotate(28.4deg)
       position: absolute
-      width: 306px
-      height: 203px
-      left: 55%
-      top: -100px
+      width: 360px
+      height: 153px
+      right: 20px
+      top: -145px
       background: url("../img/decor.svg") no-repeat center
         size: contain
 
-    &:after
-      content: ''
-      position: absolute
-      top: -86px
-      left: -95px
-      width: 241px
-      height: 157px
-      transform: rotate(22.25deg)
-      background: url("../img/decor.svg") no-repeat center
-        size: contain
-
-    > *
-      position: relative
-      z-index: 1
 
 .shops-box
   max-width: 432px
@@ -469,8 +505,10 @@ h2
   align-items: center
   justify-content: space-between
   color: #2E2E2E
-  letter-spacing: 0.18em
   font-size: 18px
+
+.location-shops
+  margin: 0 10px 0 0
 
 .name-shops
   font-weight: bold
@@ -478,16 +516,6 @@ h2
 .shops-slider
   position: relative
   padding: 0
-  &:before
-    content: ''
-    position: absolute
-    width: 306px
-    height: 203px
-    right: -25px
-    bottom: -125px
-    background: url("../img/decor.svg") no-repeat center
-      size: contain
-
   .slick-arrow
     top: 0
     transform: none
@@ -495,27 +523,36 @@ h2
 
 
 .callback-section
-  background: linear-gradient(265.99deg, #E0E0E0 6.84%, #B2B2B2 86.7%), #C4C4C4
-  padding: 93px 0 200px
+  background: linear-gradient(267.8deg, #F2F4FB -4.21%, #B2B2B2 153.21%)
+  padding: 70px 0 220px
   color: #ffffff
 
   .container
-    align-items: center
+    align-items: flex-start
     justify-content: center
+    position: relative
+    z-index: 2
 
 .checkbox
   width: 100%
   display: flex
   flex-direction: row
   align-items: center
-  letter-spacing: 0.18em
-  font-size: 14px
-  color: #fff
+  font-size: 18px
+  color: #2E2E2E
   transform: rotate(0.03deg)
 
   label
     display: inline
     width: auto
+
+.consent
+  max-width: 225px
+  width: 100%
+  .checkbox
+    align-items: flex-start
+  .checkbox-custom
+    margin: 5px 13px 0 0
 
 .checkbox-inp
   display: none
@@ -540,8 +577,8 @@ h2
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    width: 10px
-    height: 7px
+    width: 8px
+    height: 6px
     background: url("../img/checkbox.svg") no-repeat center
       size: contain
 
@@ -561,13 +598,12 @@ input
   font-family: $default-font
   height: 43px
   width: 100%
-  color: #B2B2B2
-  padding: 0 17px
+  color: #000
+  padding: 0 20px
   outline: none
   border: none
     radius: 0
-  letter-spacing: 0.18em
-  font-size: 18px
+  font-size: 24px
 
   &::placeholder
     color: #B2B2B2
@@ -580,7 +616,7 @@ input
 label
   display: block
   width: 100%
-  margin: 0 0 21px
+  margin: 0 0 20px
 
 button
   outline: none
@@ -597,10 +633,8 @@ button
   justify-content: center
   width: 100%
   height: 43px
-  letter-spacing: 0.18em
-  font-size: 18px
+  font-size: 24px
   font-weight: bold
-  text-transform: uppercase
   transform: matrix(1, 0, 0, 1, 0, 0)
 
 .btn-accent
@@ -611,24 +645,36 @@ button
     background: #2E2E2E
 
 .form
-  max-width: 432px
-
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
   button
-    margin: 8px 0 17px
+    margin: 0 0 19px
+    width: 225px
+  label
+    width: 385px
+  .checkbox
+    width: auto
+
+.form-group
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: 0 15px 0 0
+  &:last-child
+    margin: 0
+
 
 
 .callback-section__content
-  max-width: 565px
+  max-width: 510px
   width: 100%
-  font-size: 24px
-  font-weight: 500
-  letter-spacing: 0.18em
   text-transform: uppercase
   transform: rotate(0.03deg)
-  margin: 0 200px 0 0
+  margin: 0 270px 0 0
 
   h3
-    font-size: 36px
+    font-size: 48px
     font-weight: bold
 
 .btn-scroll-top
@@ -647,38 +693,38 @@ button
 
 //footer
 footer
-  background: linear-gradient(265.99deg, #E0E0E0 6.84%, #B2B2B2 86.7%), #C4C4C4
-  margin: -130px 0 0
+  margin: -187px 0 0
   z-index: 1
   position: relative
-  padding: 145px 0 25px
+  padding: 146px 0 27px
+
   &:before
     content: ''
     position: absolute
     left: 0
     bottom: 0
-    background: url("../img/footer-bg.svg") no-repeat center bottom
+    background: url("../img/footer-bg.svg") no-repeat center top
       size: cover
     width: 100%
-    height: 500px
+    height: 313px
 
   .container
     align-items: flex-end
-
+    justify-content: space-between
   .logo
-    margin-right: 87px
+    margin: 0
+    max-width: 220px
 
   .list-social
-    margin: 0 auto
-
+    margin: 0
     li
-      margin: 0 44px 0 0
-
+      margin: 0 42px 0 0
       &:last-child
         margin: 0
 
+
 .menu-footer
-  column-count: 3
+  column-count: 2
 
   li
     margin: 0 0 10px
@@ -688,11 +734,11 @@ footer
 
     a
       color: #2E2E2E
-      font-size: 18px
+      font-size: 24px
       font-weight: bold
-      text-transform: uppercase
-      letter-spacing: 0.18em
-      transform: rotate(0.03deg)
+      transform: matrix(1, 0, 0, 1, 0, 0)
+      &:hover
+        color: $accent
 
 .footer-box-icon
   width: 12px
@@ -700,7 +746,7 @@ footer
   display: flex
   align-items: center
   justify-content: center
-  margin: 0 0 0 15px
+  margin: 0 0 0 14px
 
   .icon-svg
     fill: #2E2E2E
@@ -716,7 +762,6 @@ footer
     color: #2E2E2E
     font-size: 18px
     font-weight: bold
-    letter-spacing: 0.18em
     transform: rotate(0.03deg)
     margin: 0 0 10px
 
@@ -744,6 +789,7 @@ footer
   height: 16px
   cursor: pointer
   margin: 0 0 20px auto
+
   &:before, &:after
     content: ''
     position: absolute
@@ -752,8 +798,10 @@ footer
     background: #E30613
     left: 10px
     top: 0
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
@@ -769,16 +817,31 @@ footer
   padding: 30px 20px
   background: #fff
   display: none
+  .logo
+    max-width: 200px
+  .dropdown-box
+    position: relative
+    left: 0
+    transform: none
+    top: 0
+    margin: 10px 0 0
+    &:before
+      display: none
   .menu
     flex-direction: column
     align-items: center
     justify-content: center
+    text-align: center
     margin: 30px auto
     li
       margin: 0 0 12px
+
+
+
   .list-social
     margin: 0 auto
     justify-content: center
+
   .logo
     margin: 0 auto
 

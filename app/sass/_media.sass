@@ -11,17 +11,22 @@
     padding: 0 10px
 
 @media only screen and (max-width : 1550px)
-  .menu li
-    margin: 0 20px 0 0
-    a
-      font-size: 16px
+  .menu
+    margin: 0 auto
+    li
+      margin: 0 20px 0 0
+      a
+        font-size: 20px
 
   header
     .logo
-      margin: 0 30px 0 0
+      margin: 0
 
-  .schedule
-    margin: 0 30px 0 220px
+  .list-social
+    margin: 0
+
+  .dropdown-wrapper-schedule
+    margin: 0 auto
 
   .logo
     max-width: 190px
@@ -35,8 +40,7 @@
   footer
     margin: -160px 0 0
     &:before
-      height: 600px
-      width: 1600px
+      height: 280px
 
   .footer-box a, .footer-box .address-footer
     font-size: 16px
@@ -48,6 +52,12 @@
 
   .menu-footer li a
     font-size: 16px
+
+  .address
+    margin: 0
+
+  .callback-section__content
+    margin: 0 30px 0 0
 
 @media only screen and (max-width : 1300px)
   .callback-section__content
@@ -65,23 +75,14 @@
     width: 26px
     height: 26px
 
-  .schedule
-    margin: 0 30px 0 140px
-
   .menu
     li
       margin: 0 10px 0 0
       a
-        font-size: 14px
+        font-size: 18px
 
   .tabs__caption li
     font-size: 16px
-
-  .shops .container:after
-    width: 117px
-    height: 117px
-
-  .tabs__caption li
     margin: 0 20px 0 0
 
   .shops-slider:before
@@ -94,6 +95,8 @@
 
   footer
     padding: 70px 0 25px
+    &:before
+      height: 200px
 
   .menu-footer
     li
@@ -101,8 +104,32 @@
         font-size: 14px
 
   .footer-box a, .footer-box .address-footer
-    letter-spacing: 0
     font-size: 14px
+
+  .dropdown-box:before
+    border-left: 12px solid transparent
+    border-right: 12px solid transparent
+    border-bottom: 12px solid #fff
+    top: -12px
+
+  .dropdown-box
+    left: 50%
+    transform: translate(-50%,0)
+
+  .submenu
+    font-size: 16px
+
+  .callback-section__content
+    margin: 0 0 20px
+    max-width: none
+    text-align: center
+
+  .form
+    width: 100%
+    justify-content: center
+
+  .callback-section
+    padding: 60px 0 180px
 
 
 /* Medium Devices, Desktops */
@@ -125,9 +152,6 @@
   .header-box
     font-size: 16px
 
-  .schedule
-    margin: 0 auto 0 0
-
   .tabs__content
     margin: 30px 0 0
 
@@ -140,11 +164,6 @@
   .col-4
     width: 50%
 
-  .form
-    max-width: 300px
-
-  .checkbox
-    letter-spacing: 0
 
   .btn-scroll-top
     width: 50px
@@ -157,20 +176,15 @@
 
   footer
     padding: 50px 0 20px
-    margin: 0
-    &:before
-      height: 400px
-      width: 1300px
+    margin: -30px 0 0
+
 
   .callback-section
-    padding: 40px 0
+    padding: 40px 0 70px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 860px)
-  .header-box
-    letter-spacing: 0
-
   .tabs .links-all
     margin: 20px auto 0
 
@@ -197,13 +211,28 @@
       &:last-child
         margin: 0 0 5px
 
-  footer
-    background: linear-gradient(265.99deg, #E0E0E0 6.84%, #B2B2B2 86.7%), #C4C4C4
-      size: cover
-    position: relative
+
+  .btn, input, .checkbox
+    font-size: 16px
 
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 670px)
+  .form
+    .form-group
+      width: 100%
+      margin: 0
+      align-items: center
+    label
+      width: 100%
+
+  .consent
+    max-width: none
+    justify-content: center
+    .checkbox
+      margin: 0
+      justify-content: center
+
 @media only screen and (max-width : 575px)
   .header-box
     font-size: 14px
@@ -233,6 +262,17 @@
     width: 117px
     height: 117px
 
+  .callback-section
+    padding: 40px 0 100px
+
+  footer
+    margin: -50px 0 0
+    &:before
+      height: 180px
+    .logo
+      margin: 0
+      max-width: 140px
+
 @media only screen and (max-width : 480px)
   header
     .schedule
@@ -243,12 +283,12 @@
 
   .footer-box a, .footer-box .address-footer
     font-size: 12px
-    letter-spacing: 0
 
   footer
-    padding: 70px 0 10px
+    padding: 30px 0 10px
+    margin: 0
     &:before
-      height: 350px
+      height: 260px
       width: 1100px
     .list-social
       margin: 10px auto 0
@@ -275,33 +315,10 @@
     width: 40px
     height: 40px
 
+  footer
+    .logo
+      max-width: 130px
+
 @media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
 	/**/
 

@@ -85,3 +85,8 @@ $('.btn-burger').click(function () {
 $('.btn-close').click(function () {
     $('.mobile-menu').fadeOut();
 });
+
+$('.dropdown-item').on('click', function (e) {
+    e.preventDefault();
+   $(this).siblings('.dropdown-box').fadeToggle();
+});
