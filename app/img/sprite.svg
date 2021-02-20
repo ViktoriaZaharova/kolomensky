@@ -37,4 +37,9 @@
         <path d="M17.0977 1L21.6867 7L17.0977 13" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="arrow-left" viewBox="0 0 49 20">
+        <path d="M3 10L47 10" stroke-width="3" stroke-linecap="round"/>
+        <path d="M11 2L2 10L11 18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
 </svg>
