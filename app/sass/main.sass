@@ -245,7 +245,7 @@ h1
 
   li
     margin: 0 60px 0 0
-
+    font-weight: 700
     &:last-child
       margin: 0
 
@@ -1171,12 +1171,13 @@ footer
     -o-object-fit: cover
     object-fit: cover
 
-.about-slider .slick-arrow
-  background: rgba(207, 207, 207, 0.25)
-  background-blend-mode: multiply
+.about-slider, .ecology-slider
+  .slick-arrow
+    background: rgba(207, 207, 207, 0.25)
+    background-blend-mode: multiply
 
-  &:hover
-    background: rgba(112, 112, 112, 0.4)
+    &:hover
+      background: rgba(112, 112, 112, 0.4)
 
 .about-slider-preview
   margin: 42px 0 70px
@@ -1476,7 +1477,75 @@ footer
       &:last-child
         margin: 0
 
+//ecology
+.ecology
+  h3
+    text-align: center
+    margin: 0 auto 56px
+    font-size: 36px
+    font-weight: 700
 
+.ecology-box
+  margin: 83px 0 0
+  ul
+    margin: 0 0 20px
+
+
+.ecology-slider__box
+  height: 573px
+  margin: 0 auto
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.list-advantages
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+  font-size: 20px
+  color: $accent
+  font-weight: bold
+  margin: 80px 0 0
+  text-align: center
+  li
+    padding: 18px 30px
+    margin: 0 0 30px
+    border: 2px solid #2E2E2E
+
+.indicators
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0 160px
+  &-box
+    width: 50%
+    margin: 60px 0 0
+    font-size: 20px
+    text-align: left
+    p
+      max-width: 554px
+    &__img
+      margin: 0 0 30px
+
+.list-disc
+  padding: 0 0 0 20px
+  list-style-type: disc
+  li
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+
+.font-bold
+  font-weight: bold
 
 @import "media"
 // Всегда в конце
