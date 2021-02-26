@@ -1649,5 +1649,63 @@ footer
     .date, .links
       font-size: 16px
 
+//contacts page
+.contacts-section__wrapper
+  position: relative
+  width: 100%
+
+.contacts-info
+  margin: 157px 0 222px
+  background: #fff
+  padding: 35px 0 50px
+  max-width: 544px
+  width: 100%
+  font-size: 24px
+  position: relative
+  z-index: 2
+  h3
+    color: #231F20
+    font-size: 36px
+    font-weight: bold
+    padding: 0 50px
+  .list-schedule
+    font-size: 24px
+    margin: 40px 0 0
+    li
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 10px 50px
+
+.contacts-info__item
+  margin: 0 0 100px
+  &:last-child
+    margin: 0
+
+.list-details-contacts
+  padding: 0 50px
+  h3
+    padding: 0
+  li
+    margin: 0 0 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:last-child
+      margin: 0
+    a
+      color: #2E2E2E
+
+.map
+  width: 100%
+  height: 100%
+  position: absolute
+  z-index: 1
+  iframe
+    width: 100%
+    height: 100%
+
+
 @import "media"
 // Всегда в конце
