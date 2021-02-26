@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Коломенский</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+
+  <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+  <ul class="menu">
+    <li class="dropdown-wrapper"><a href="about.html" class="dropdown-item">О торговом центре </a>
+      <div class="dropdown-box">
+        <ul class="list-schedule">
+          <li><a href="sales.html">Акции</a></li>
+          <li><a href="events.html">События</a></li>
+          <li><a href="about.html">О торговом центре</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="ecology.html">Экология</a></li>
+    <li><a href="plane.html">Планы этажей</a></li>
+    <li><a href="news.html">Новости</a></li>
+    <li><a href="tenant.html">Арендаторам</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+
+  <ul class="list-social">
+    <li><a href="#">
+      <svg class="icon-svg">
+        <use xlink:href="img/sprite.svg#vk"></use>
+      </svg>
+    </a></li>
+    <li><a href="#">
+      <svg class="icon-svg">
+        <use xlink:href="img/sprite.svg#instagram"></use>
+      </svg>
+    </a></li>
+    <li><a href="#">
+      <svg class="icon-svg">
+        <use xlink:href="img/sprite.svg#fb"></use>
+      </svg>
+    </a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="address header-box">
+        <div class="header-box__icon">
+          <svg class="icon-svg fill-none">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>
+        </div>
+        <div class="header-box__text">проспект Андропова, 23</div>
+      </div>
+
+
+      <div class="dropdown-wrapper dropdown-wrapper-schedule">
+        <div class="schedule header-box dropdown-item">
+          <div class="header-box__icon">
+            <img src="img/clock.svg" alt="">
+          </div>
+          <div class="header-box__text">10:00 — 22:00</div>
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+          </svg>
+        </div>
+        <div class="dropdown-box">
+          <ul class="list-schedule">
+            <li>
+              <p>ТЦ Коломенский </p><span>   10:00-22:00</span>
+            </li>
+            <li>
+              <p>МИРАТОРГ</p><span>8:00-23:00</span>
+            </li>
+            <li>
+              <p>KFC</p><span>Круглосуточно</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <a href="#" class="links-call header-box">
+                <span class="header-box__icon">
+                    <svg class="icon-svg fill-none">
+                        <use xlink:href="img/sprite.svg#message"></use>
+                    </svg>
+                </span>
+        <span class="header-box__text">Обратная связь</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="header-center">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+      <ul class="menu">
+        <li class="dropdown-wrapper"><a href="about.html" class="dropdown-item">О торговом центре </a>
+          <div class="dropdown-box">
+            <ul class="list-schedule">
+              <li><a href="sales.html">Акции</a></li>
+              <li><a href="events.html">События</a></li>
+              <li><a href="about.html">О торговом центре</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="ecology.html">Экология</a></li>
+        <li><a href="plane.html">Планы этажей</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="tenant.html">Арендаторам</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+
+      <ul class="list-social">
+        <li><a href="#">
+          <svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a></li>
+        <li><a href="#">
+          <svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+        </a></li>
+        <li><a href="#">
+          <svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#fb"></use>
+          </svg>
+        </a></li>
+      </ul>
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs-list">
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><span>Обратная связь</span></li>
+    </ul>
+  </div>
+</div>
+
+<section class="plane callback">
+  <div class="container">
+    <h1>Обратная связь</h1>
+
+    <div class="tabs">
+      <ul class="tabs__caption">
+        <li>Написать жалобу</li>
+        <li class="active">Заполнить анкету посетителя</li>
+        <li>Предложить идею</li>
+      </ul>
+
+      <div class="tabs__content">
+        <div class="box-text">
+          <p>Свои жалобы и претензии Вы можете оставить, заполнив поля для обратной связи.
+            Мы обязательно примем меры по устранению Ваших замечаний.</p>
+        </div>
+        <form method="post" class="form-callback">
+          <div class="form-group">
+            <label>
+              <span class="input-title">Имя</span>
+              <input type="text" name="name">
+            </label>
+            <label>
+              <span class="input-title">Телефон</span>
+              <input type="text" name="phone" required>
+            </label>
+            <label>
+              <span class="input-title">Электронная почта</span>
+              <input type="text" name="mail" required>
+            </label>
+          </div>
+
+          <div class="form-group form-group-message">
+            <label>
+              <span class="input-title">Опишите Вашу проблему</span>
+              <textarea name="message"></textarea>
+            </label>
+          </div>
+
+          <div class="form-group-footer">
+            <button type="submit" class="btn btn-accent">Отправить</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="tabs__content active">
+        <form method="post" class="form-callback">
+          <div class="form-group-row">
+            <label>
+              <span class="input-title">Имя</span>
+              <input type="text" name="name">
+            </label>
+            <label>
+              <span class="input-title">Телефон</span>
+              <input type="text" name="phone" required>
+            </label>
+            <label>
+              <span class="input-title">Электронная почта</span>
+              <input type="text" name="mail" required>
+            </label>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group-col">
+              <h4>Ваш возраст?</h4>
+              <ul class="list-radio list-radio-col">
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio1">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">до 18 лет</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio1">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">18-25 лет</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio1">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">26-40 лет</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio1">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">41-55 лет</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio1">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">55-65 лет</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio1">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">более 66 лет</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group-col">
+              <h4>Ваш пол?</h4>
+              <ul class="list-radio">
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Мужской</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Женский</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group-col">
+              <h4>Как Вы добираетесь
+                до нашего Торгового центра?</h4>
+              <ul class="list-radio">
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">На машине</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Пешком</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">На общественном транспорте</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group-col">
+              <h4>Как часто Вы посещаете
+                наш Торговый центр:</h4>
+              <ul class="list-radio">
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Почти ежедневно</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Несколько раз в неделю</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Несколько раз в месяц</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Реже одного раза в месяц</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group-col w-auto">
+              <h4>Какая реклама Торгового центра Вам встречалась?</h4>
+              <ul class="list-radio list-radio-col">
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Радио</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Сайт</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Навигация</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Журналы/Газеты</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Наружная реклама</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Дорожные знаки</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Метро</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Флаеры</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox2">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Другое</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group-col w-auto">
+              <h4>С какой целью Вы посещаете
+                наш Торговый центр:</h4>
+              <ul class="list-radio">
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Посещение магазинов одежды, обуви и аксессуаров</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Покупка продуктов</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Посещение аптеки</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Приобретение товаров для дома</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Покупка ювелирной, сувенирной продукции</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Покупка товаров для спорта и активного отдыха</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Посещение детской/ развлекательной зоны</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Встреча с друзьями</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Получение услуг (банк, салон красоты и т.д.)</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Посещение ресторана/кафе</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox3">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Гуляю/без цели</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group-col">
+              <h4>Какие из перечисленных факторов были решающими при выборе нашего Торгового центра:</h4>
+              <ul class="list-radio">
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Уровень цен</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Качество товаров</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Широта ассортимента</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Присутствие любимого бренда</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Удобное расположение</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Хорошее место провести досуг</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Выбор кафе, ресторанов</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Проводимые мероприятия и акции</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox4">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Выбор был случайным</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group-col w-100">
+              <h4>Оцените наш Торговый центр:</h4>
+              <ul class="list-radio list-radio-row">
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio5">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Отлично</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio5">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Хорошо</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio5">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Удовлетворительно</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox">
+                    <input class="checkbox-inp" type="radio" name="radio5">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Плохо</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="form-group-footer">
+            <div class="consent">
+              <label class="checkbox">
+                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                <span class="checkbox-custom"></span>
+                <span
+                    class="label">Я согласен с использованием моих персональных данных для обработки данного сообщения</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="label">Я согласен получать информационную рассылку на e-mail</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="label">Я согласен получать рассылку в виде SMS-сообщения</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-accent">Отправить</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="tabs__content">
+        <div class="box-text">
+          <p>Нам важны Ваши предложения и идеи, которые позволят сделать наш Торговый центр более комфортным и
+            отвечающим Вашим пожеланиям.</p>
+        </div>
+        <form method="post" class="form-callback">
+          <div class="form-group">
+            <label>
+              <span class="input-title">Имя</span>
+              <input type="text" name="name">
+            </label>
+            <label>
+              <span class="input-title">Телефон</span>
+              <input type="text" name="phone" required>
+            </label>
+            <label>
+              <span class="input-title">Электронная почта</span>
+              <input type="text" name="mail" required>
+            </label>
+          </div>
+
+          <div class="form-group form-group-message">
+            <label>
+              <span class="input-title">Опишите Вашу проблему</span>
+              <textarea name="message"></textarea>
+            </label>
+          </div>
+
+          <div class="form-group-footer">
+            <label class="label-file">
+              <input type="file" class="input-file">
+              <span class="label-file__icon"><svg class="icon-svg"><use
+                  xlink:href="img/sprite.svg#file"></use></svg></span>
+              <span class="label-file__text">Прикрепить файл</span>
+            </label>
+            <button type="submit" class="btn btn-accent">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="callback-section">
+  <div class="container">
+    <div class="callback-section__content">
+      <h3>ПОЛУЧАЙТЕ НОВОСТИ
+        ОБ АКЦИЯХ ПЕРВЫМИ</h3>
+    </div>
+
+    <form method="post" class="form">
+      <div class="form-group">
+        <label><input type="text" placeholder="ivanivanov@mail.ru" required name="mail"></label>
+        <div class="form-line">
+          <label class="checkbox">
+            <input class="checkbox-inp" type="radio" name="radio" checked>
+            <span class="checkbox-custom"></span>
+            <span class="label">Для мужчин</span>
+          </label>
+
+          <label class="checkbox">
+            <input class="checkbox-inp" type="radio" name="radio">
+            <span class="checkbox-custom"></span>
+            <span class="label">Для женщин</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-accent">Подписаться</button>
+
+        <div class="consent">
+          <label class="checkbox">
+            <input class="checkbox-inp" type="checkbox" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="label">Согласен на обработку персональных данных</span>
+          </label>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+    <ul class="list-social">
+      <li><a href="#">
+        <svg class="icon-svg">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="icon-svg">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="icon-svg">
+          <use xlink:href="img/sprite.svg#fb"></use>
+        </svg>
+      </a></li>
+    </ul>
+
+    <ul class="menu-footer">
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="ecology.html">Экология</a></li>
+      <li><a href="scheme.html">Схема ТЦ</a></li>
+      <li><a href="callback.html">Обратная связь</a></li>
+      <li><a href="tenant.html">Арендаторам</a></li>
+    </ul>
+
+    <div class="footer-box">
+      <a href="tel:+74959846121" class="phone">
+        <span class="footer-box-text">+7 (495) 984-61-21</span>
+        <span class="footer-box-icon"><svg class="icon-svg"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
+      </a>
+      <div class="address-footer">
+        <span class="footer-box-text">Пр-т Андропова, 23</span>
+        <span class="footer-box-icon"><svg class="icon-svg"><use
+            xlink:href="img/sprite.svg#location"></use></svg></span>
+      </div>
+
+      <a href="mailto:info@tc-kolomensky.ru" class="mail">
+        <span class="footer-box-text">info@tc-kolomensky.ru</span>
+        <span class="footer-box-icon"><svg class="icon-svg"><use xlink:href="img/sprite.svg#pencil"></use></svg></span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="btn-scroll-top"><img src="img/arrow-top.svg" alt=""></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

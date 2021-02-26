@@ -1488,6 +1488,7 @@ footer
 
 .ecology-box
   margin: 83px 0 0
+  width: 100%
   ul
     margin: 0 0 20px
 
@@ -1705,6 +1706,153 @@ footer
   iframe
     width: 100%
     height: 100%
+
+//callback page
+.callback
+  margin: 0 0 134px
+  .tabs
+    max-width: 1420px
+    margin: 0 auto
+    width: 100%
+  .tabs__caption
+    justify-content: space-between
+  .tabs__content
+    font-size: 20px
+    margin: 90px 0 0
+  .box-text
+    margin: 0 0 70px
+
+.form-callback
+  width: 100%
+  justify-content: space-between
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+  input, textarea
+    width: 100%
+    border: 1px solid #2E2E2E
+    background: #fff
+    font-size: 20px
+  input
+    height: 62px
+  label
+    margin: 0 0 58px
+    &:last-child
+      margin: 0
+  .form-group
+    margin: 0 0 40px
+    max-width: 480px
+    width: 100%
+  .form-group-message
+    width: calc(100% - 480px)
+    max-width: 845px
+    padding: 0 0 0 20px
+  button
+    max-width: 280px
+    height: 73px
+    font-size: 24px
+  .label-file
+    margin: 0 40px 0 0
+  .consent
+    max-width: none
+  .checkbox
+    margin: 0 0 10px
+    justify-content: flex-start
+    &:last-child
+      margin: 0 0 10px
+  .checkbox-custom
+    border: 1px solid #2E2E2E
+  .form-group-row
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0 0 30px
+    label
+      max-width: 29%
+    .checkbox
+      max-width: none
+
+.form-group-footer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+
+.input-title
+  display: block
+  width: 100%
+  font-size: 20px
+  margin: 0 0 10px
+
+.label-file
+  position: relative
+  margin: 0 40px 0 0
+  border: 1.5px solid #E30613
+  max-width: 317px
+  width: 100%
+  height: 73px
+  color: $accent
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  transition: .3s ease
+  &__icon
+    fill: $accent
+    width: 29px
+    height: 32px
+    margin: 0 29px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+  &:hover
+    color: #fff
+    background: $accent
+    .label-file__icon
+      fill: #fff
+
+.input-file
+  display: none
+
+textarea
+  padding: 10px
+  height: 373px
+  font-family: $default-font
+  color: #000
+  font-size: 20px
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.form-group-col
+  margin: 0 0 20px
+  max-width: 29%
+  width: 100%
+  h4
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 10px
+    min-height: 65px
+
+.w-auto
+  max-width: 65%
+
+.form-group-col.w-100
+  max-width: none
+
+.list-radio-col
+  column-count: 2
+
+.list-radio-row
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
 
 
 @import "media"

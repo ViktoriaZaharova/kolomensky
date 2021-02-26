@@ -208,7 +208,21 @@
   .plane .tabs__content h3
     margin: 0 0 30px
 
-/* Medium Devices, Desktops
+  .plane .tabs__caption li
+    font-size: 24px
+
+  .callback
+    .tabs__content
+      margin: 30px 0 0
+    .box-text
+      margin: 0 0 40px
+
+  .form-group-col, .form-callback .form-group-row label
+    max-width: 32%
+
+  .w-auto
+    max-width: 66%
+
 @media only screen and (max-width: 992px)
   header
     .menu
@@ -330,6 +344,34 @@
   .contacts-info__item
     margin: 0 0 40px
 
+  .form-callback
+    label
+      margin: 0 0 20px
+    input
+      height: 50px
+    button
+      font-size: 20px
+      height: 60px
+    .form-group
+      max-width: 350px
+    .form-group-message
+      width: calc(100% - 350px)
+      max-width: none
+
+  .input-title
+    font-size: 16px
+
+  textarea
+    height: 250px
+
+  .label-file
+    height: 60px
+    max-width: 250px
+    &__icon
+      width: 20px
+      height: 24px
+      margin: 0 10px 0 0
+
 /* Small Devices, Tablets
 @media only screen and (max-width: 860px)
   .tabs .links-all
@@ -424,6 +466,42 @@
   .indicators-box__img
     margin: 0 0 15px
 
+  .callback
+    margin: 0 0 50px
+    .tabs__content
+      font-size: 16px
+      margin: 0
+    .tabs__caption
+      align-items: stretch
+      li
+        width: 49%
+        height: auto
+
+  .form-callback
+    .form-group
+      max-width: none
+      width: 100%
+      padding: 0
+
+  .form-group-col
+    max-width: none
+    h4
+      min-height: auto
+      font-size: 20px
+
+  .form-callback .form-group-row label
+    max-width: none
+
+  .form-callback .form-group-row
+    margin: 0 0 20px
+
+  .form-group-footer
+    flex-wrap: wrap
+    justify-content: center
+    .consent
+      width: 100%
+      margin: 0 0 20px
+
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 670px)
   .form
@@ -451,6 +529,21 @@
 
   .contacts-info
     max-width: 300px
+
+  .form-group-footer
+    flex-direction: column
+    align-items: center
+
+  .label-file
+    margin: 0 auto 20px
+
+  .form-callback
+    .label-file
+      margin: 0 auto 20px
+    button
+      max-width: none
+    .checkbox
+      justify-content: flex-start
 
 @media only screen and (max-width: 575px)
   .header-box
@@ -634,6 +727,20 @@
 
     li a:before
       margin: 3px 10px
+
+  .callback
+    .tabs__caption
+      li
+        font-size: 16px
+        width: 100%
+        padding: 10px
+
+  .form-callback
+    button
+      margin: 0 auto
+
+  .list-radio-col
+    column-count: 1
 
 /* Custom, iPhone Retina
 @media only screen and (max-width: 420px)
