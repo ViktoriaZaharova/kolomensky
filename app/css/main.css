@@ -379,11 +379,15 @@ h1 {
   .news-box:hover .news-box__hidden {
     bottom: 0; }
   .news-box img {
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .news-box__hidden {
   position: absolute;
   left: 0;
+  width: 100%;
   bottom: -100%;
   background: linear-gradient(255.63deg, #FF9280 -43.07%, #E30613 128.95%), #C4C4C4;
   color: #fff;
@@ -1553,6 +1557,25 @@ footer {
     color: #2E2E2E;
     font-weight: bold; }
 
+.gallery-box-col {
+  margin: 0 0 30px; }
+  .gallery-box-col .news-box {
+    max-height: 383px;
+    margin: 0;
+    height: 100%; }
+  .gallery-box-col .news-box__hidden {
+    height: 100%;
+    background: #E30613;
+    padding: 24px;
+    font-size: 18px; }
+    .gallery-box-col .news-box__hidden h3 {
+      font-size: 30px;
+      margin: 0 0 30px; }
+    .gallery-box-col .news-box__hidden .line {
+      margin: auto 0 0; }
+    .gallery-box-col .news-box__hidden .date, .gallery-box-col .news-box__hidden .links {
+      font-size: 16px; }
+
 /*==========  Desktop First  ========== */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1700px) {
@@ -1601,13 +1624,13 @@ footer {
     max-height: 800px; } }
 
 @media only screen and (max-width: 1350px) {
-  .news-box-col .news-box__hidden {
+  .news-box-col .news-box__hidden, .gallery-box-col .news-box__hidden {
     font-size: 16px;
     padding: 20px; }
-    .news-box-col .news-box__hidden h3 {
+    .news-box-col .news-box__hidden h3, .gallery-box-col .news-box__hidden h3 {
       font-size: 24px;
       margin: 0 0 20px; }
-    .news-box-col .news-box__hidden .date, .news-box-col .news-box__hidden .links {
+    .news-box-col .news-box__hidden .date, .news-box-col .news-box__hidden .links, .gallery-box-col .news-box__hidden .date, .gallery-box-col .news-box__hidden .links {
       font-size: 14px; } }
 
 @media only screen and (max-width: 1300px) {
@@ -1924,9 +1947,9 @@ footer {
     margin: 0 auto 10px; }
   .load-more {
     font-size: 18px; }
-  .news-box-col {
+  .news-box-col, .gallery-box-col {
     margin: 0 0 20px; }
-    .news-box-col .news-box {
+    .news-box-col .news-box, .gallery-box-col .news-box {
       max-height: 300px; }
   .news-section {
     margin: 0 0 40px; }
