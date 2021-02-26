@@ -1547,5 +1547,83 @@ footer
 .font-bold
   font-weight: bold
 
+//plane page
+.plane
+  .tabs__caption
+    width: 100%
+    margin: 0 0 11px
+    justify-content: center
+    li
+      border: 3px solid transparent
+      height: 60px
+      padding: 0 20px
+      font-size: 36px
+      font-weight: bold
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      margin: 0
+    .active
+      border-color: $accent
+      color: $accent
+  .tabs__content
+    h3
+      font-size: 36px
+      font-weight: bold
+      margin: 0 0 50px
+
+.sorting
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 24px
+  margin: 0 0 77px
+
+.list-sort
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 0 30px
+  font-size: 24px
+  li
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #B2B2B2
+    .active
+      color: $accent
+
+.plane-wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.plane-img
+  width: calc(100% - 550px)
+  max-width: 1150px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+.plane-content
+  max-width: 550px
+  width: 100%
+
+.plane-content__info
+  font-size: 24px
+  color: #B2B2B2
+  li
+    margin: 0 0 25px
+    &:last-child
+      margin: 0
+  p
+    color: #2E2E2E
+    font-weight: bold
+
 @import "media"
 // Всегда в конце

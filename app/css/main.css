@@ -1445,6 +1445,114 @@ footer {
 .font-bold {
   font-weight: bold; }
 
+.plane .tabs__caption {
+  width: 100%;
+  margin: 0 0 11px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .plane .tabs__caption li {
+    border: 3px solid transparent;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 36px;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0; }
+  .plane .tabs__caption .active {
+    border-color: #E30613;
+    color: #E30613; }
+
+.plane .tabs__content h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 0 50px; }
+
+.sorting {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 24px;
+  margin: 0 0 77px; }
+
+.list-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 0 30px;
+  font-size: 24px; }
+  .list-sort li {
+    margin: 0 20px 0 0; }
+    .list-sort li:last-child {
+      margin: 0; }
+    .list-sort li a {
+      color: #B2B2B2; }
+    .list-sort li .active {
+      color: #E30613; }
+
+.plane-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.plane-img {
+  width: calc(100% - 550px);
+  max-width: 1150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.plane-content {
+  max-width: 550px;
+  width: 100%; }
+
+.plane-content__info {
+  font-size: 24px;
+  color: #B2B2B2; }
+  .plane-content__info li {
+    margin: 0 0 25px; }
+    .plane-content__info li:last-child {
+      margin: 0; }
+  .plane-content__info p {
+    color: #2E2E2E;
+    font-weight: bold; }
+
 /*==========  Desktop First  ========== */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1700px) {
@@ -1586,7 +1694,15 @@ footer {
     margin: 16px auto 40px; }
   .news-page-section h1 {
     font-size: 40px;
-    margin: 0 auto 30px; } }
+    margin: 0 auto 30px; }
+  .plane-content {
+    max-width: 450px; }
+  .plane-img {
+    width: calc(100% - 450px); }
+  .sorting {
+    margin: 0 0 30px; }
+  .plane .tabs__content h3 {
+    margin: 0 0 30px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1653,7 +1769,13 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
   .indicators-box {
-    padding: 0 20px; } }
+    padding: 0 20px; }
+  .plane-content__info, .sorting {
+    font-size: 20px; }
+  .plane .tabs__content h3 {
+    font-size: 20px; }
+  .plane-content__info li {
+    margin: 0 0 15px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px) {
@@ -1667,7 +1789,16 @@ footer {
     font-size: 18px;
     text-align: center; }
     .callback-section__content h3 {
-      font-size: 24px; } }
+      font-size: 24px; }
+  .plane-content {
+    max-width: none;
+    margin: 0 0 30px; }
+  .plane-img {
+    width: 100%;
+    max-width: none; }
+  .plane .tabs__caption li {
+    font-size: 20px;
+    height: 40px; } }
 
 @media only screen and (max-width: 768px) {
   .shops .container:before {
@@ -1865,4 +1996,7 @@ footer {
     width: 40px;
     height: 40px; }
   footer .logo {
-    max-width: 130px; } }
+    max-width: 130px; }
+  .list-sort {
+    margin: 5px 0 0;
+    width: 100%; } }
